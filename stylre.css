@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+     overflow-x: hidden;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+   align-items: center;
+    background-color: black;
+    color: white;
+    justify-content: center;
+   justify-content: space-around;
+    z-index: 99;
+    
+}
+.nav_count{display: flex;
+   align-items: center;
+    background-color:black;
+    color: white;
+    justify-content: center;
+   justify-content: space-between;
+   gap: 80px;
+}
+.nav_count h3{
+    color: white;
+    background-color: black;
+}
+.nav_count h3:hover{
+    color: #95C11Eed;
+    -webkit-text-stroke: 0.5px #95C11Eed;
+    text-decoration: underline;
+}
+
+#lets{
+    margin-top: 1px;
+    border: solid #a4c743ed 4px;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 20px;
+    font-family : 'Poppins', sans-serif;
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    background-color: black
+}
+#talk {
+    background-color: black;
+
+    margin-right: 6px;
+    }
+.pages{
+    background-color: black;
+    position: relative;
+}
+
+/* HOMEPAGE */
+.homepage{
+    display: flex;
+    flex-direction: column;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+display: flex;
+
+
+
+}
+.home_content{
+    display: flex;
+    flex: 1.8;
+    flex-direction: column;
+    background-color: black;
+    padding-left: 80px;
+    padding-top: 50px;
+    color: white;
+}
+.home_pic{
+    flex: 1.2;
+    background-color: black;
+    position: relative;
+}
+hr{
+    height: 5px;
+    margin-top: 10px;
+    background-color:white;
+    width: 250px;
+    margin-bottom: 15PX;
+}
+#intro1{
+    color: #ade511ed ;
+    font-size: 60px;
+    -webkit-text-stroke: 1px black;
+}
+#intro2{
+    color: black;
+    -webkit-text-stroke: 1px white;
+        font-size: 70px;
+}
+#punch_line{
+    font-size: 18px;
+    font-weight: 700;
+}
+#getTouchDiv{
+    display: flex;
+    margin-top: 50px;
+}
+
+#getTouch{
+    
+    background-color: #95C11Eed;
+     border: solid #a4c743ed 4px;
+    border-radius: 8px;
+    padding: 8px;
+    font-size:18px;
+    font-family : 'Poppins', sans-serif;
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    color: black;
+    display: inline;
+}
+
+
+#DpBack{
+    width: 600px;
+    padding-left: 20px;
+    padding-bottom: 80px;
+    position: absolute;
+  top: -10px;
+  
+  left: -90px;
+  z-index: 0;
+
+}
+#HR{
+ position:absolute ;
+  top: 0;
+  left: -90px;
+  z-index: 1;
+  height: 750px;
+  padding-left: 80px;
+     padding-bottom: 130px;
+}
+#intouch {
+  background-color: rgb(5, 1, 1);
+  width: 80%;
+ margin: -108px auto 0 auto;
+  border: 2px solid #95C11Eed;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 10px;
+  flex-wrap: wrap; 
+   z-index: 10;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intouch1 {
+  font-size: 20px;
+  margin: 5px 0 0 0;
+}
+
+.intouch2 {
+  font-size: 12px;
+  margin: 0;
+}
+
+
+/* ABOUT */
+.About{
+    height: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.aboutContent{
+
+    margin-top: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+}
+.aboutMe{
+    width: 10%;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    color: #95C11Eed;
+    border: 2px solid hsla(76, 73%, 44%, 0.929);
+    border-radius: 20px;
+}
+.aboutIntro{
+    width: 60%;
+    margin-top: 20px;
+}
+
+.aboutSwitch{
+    padding-bottom: 10px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 22%;
+    height: 30px;
+    flex-direction: row;
+    text-align: center;
+      border: 3px solid #95C11Eed ;
+      border-radius: 8px;
+}
+
+.aboutAbout{
+ padding-left: 15px;
+ padding-right: 15px;
+ padding-top: 3px;
+ height: 30px;
+ width: 2000px;
+ border-radius: 5px;
+}
+.aboutAbout:hover{
+    background-color: #95C11Eed;
+        color: black;
+}
+
+.aboutEducation{
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 3px;
+ height: 30px;
+ margin-left:20px ;
+  border-radius: 5px;
+}
+
+.aboutEducation:hover{
+    background-color: #95C11Eed;
+    color: black;
+}
+
+.aboutExperience{
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 3px;
+ height: 30px;
+  margin-left:20px ;
+   border-radius: 5px;
+}
+.aboutExperience:hover{
+    background-color: #95C11Eed;
+        color: black;
+}
+
+.aboutCard{
+    background-color: aqua;
+    padding: 20px;
+    width: 80%;
+    height: 400px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+
+}
+.aboutCardPic{
+    background-color: red;
+    flex: 1;
+}
+
+.aboutCardInfo{
+    background-color: green;
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.aboutCardInfo-persnolInfo{
+    background-color: yellow;
+    flex: .65;
+
+}
+.aboutCardInfo-2{
+    background-color: pink;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.aboutCardInfo-2-1 ,.aboutCardInfo-2-2{
+    background-color: white;
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+} 
+.aboutCardInfo-2-email,.aboutCardInfo-2-follow , .aboutCardInfo-2-phone ,.aboutCardInfo-2-address{
+    background-color: red;
+    flex: 1;
+    
+
+}
+.aboutCardInfo-2-follow,.aboutCardInfo-2-phone{
+    margin-left: 10px;
+}
+
+
+/*skills*/
+.skillsh1{
+    color: #a9d728ed;
+    font-size: 50px;
+    margin-top: 50px;
+    text-decoration: underline;
+
+   
+}
+  .skillsCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .skillsCardRow1,
+      

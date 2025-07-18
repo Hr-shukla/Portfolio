@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+    html, body { width:100%; height:100%; overflow-x:hidden; }
+    body { background:#111; color:#fff; }
+    .nav { position:fixed; top:0; width:100%; height:80px; background:#000; display:flex; align-items:center; justify-content:space-between; padding:0 40px; z-index:100; }
+    .nav h2, .nav .menu a { color:#fff; text-decoration:none; margin:0 15px; font-weight:500; }
+    .nav .menu { display:flex; }
+    .nav button { background:#95C11E; border:none; padding:10px 20px; border-radius:5px; color:#000; font-weight:600; cursor:pointer; }
+    .hero { display:flex; align-items:center; justify-content:space-between; padding:120px 40px 80px; }
+    .hero .hero-text { max-width:50%; }
+    .hero h1 { font-size:48px; margin-bottom:20px; }
+    .hero h2 { font-size:24px; color:#95C11E; margin-bottom:10px; }
+    .hero p { font-size:18px; line-height:1.5; margin-bottom:20px; }
+    .hero .btn { background:#95C11E; border:none; padding:12px 25px; border-radius:5px; color:#000; font-size:16px; cursor:pointer; }
+    .hero .hero-img img { max-width:400px; border-radius:10px; }
+    .projects { padding:60px 40px; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; }
+    .project-card { background:#222; border-radius:8px; overflow:hidden; transition:transform .3s; }
+    .project-card img { width:100%; display:block; }
+    .project-card:hover { transform:scale(1.03); }
+    .project-card .info { padding:15px; }
+    .project-card .info h3 { font-size:20px; margin-bottom:10px; }
+    .project-card .info a { color:#95C11E; text-decoration:none; font-weight:500; }
+    .contact { position:relative; margin:-40px auto 60px; width:80%; background:#000; border:2px solid #95C11E; border-radius:8px; padding:30px; display:flex; justify-content:space-around; flex-wrap:wrap; box-shadow:0 4px 20px rgba(0,0,0,0.5); }
+    .contact .block { text-align:center; flex:1 1 120px; margin:10px; }
+    .contact .block i { font-size:2.5rem; margin-bottom:10px; color:#95C11E; }
+    .contact .block h4 { font-size:18px; margin-bottom:5px; }
+    .contact .block p { font-size:14px; color:#aaa; }
+    /* Responsive */
+    @media(max-width:768px){ .hero { flex-direction:column; text-align:center; } .hero .hero-text, .hero .hero-img { max-width:100%; } .nav .menu { display:none; } }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <h2>PORTFOLIO</h2>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button>Let's Talk</button>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Hi, I'm HARSH RAJ SHUKLA</h2>
+      <h1>A Next-Generation Computer Engineer</h1>
+      <p>Code is my canvas, logic is my brush. I paint the future with algorithms that rush.</p>
+      <button class="btn">Get in Touch</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://source.unsplash.com/random/400x400?technology" alt="Profile">
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="project-card">
+      <img src="https://source.unsplash.com/random/300x200?coding" alt="Project 1">
+      <div class="info">
+        <h3>Project One</h3>
+        <a href="#">View Details</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://source.unsplash.com/random/300x200?design" alt="Project 2">
+      <div class="info">
+        <h3>Project Two</h3>
+        <a href="#">View Details</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://source.unsplash.com/random/300x200?web" alt="Project 3">
+      <div class="info">
+        <h3>Project Three</h3>
+        <a href="#">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="block">
+      <i class="fa-brands fa-linkedin"></i>
+      <h4>LinkedIn</h4>
+      <p>Connect Professionally</p>
+    </div>
+    <div class="block">
+      <i class="fa-brands fa-github"></i>
+      <h4>GitHub</h4>
+      <p>See My Repository</p>
+    </div>
+    <div class="block">
+      <i class="fa-brands fa-instagram"></i>
+      <h4>Instagram</h4>
+      <p>Connect Personally</p>
+    </div>
+    <div class="block">
+      <i class="fa-solid fa-envelope"></i>
+      <h4>Gmail</h4>
+      <p>Send Me Mail</p>
+    </div>
+  </section>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Mobile menu toggle (if you add a menu button)
+    // const menuBtn = document.querySelector('.menu-btn');
+    // const menu = document.querySelector('.menu');
+    // menuBtn.addEventListener('click', () => menu.classList.toggle('active'));
+  </script>
+</body>
+</html>
