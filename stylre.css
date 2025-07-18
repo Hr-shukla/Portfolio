@@ -331,17 +331,65 @@ hr{
 
 
 /*skills*/
-.skillsh1{
+
+  .skills{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skillsh1{
+    flex: 0.2;
     color: #a9d728ed;
     font-size: 50px;
-    margin-top: 50px;
     text-decoration: underline;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
    
 }
-  .skillsCard {
+  .skillsCardSection {
+    flex: 3;
     display: flex;
     flex-direction: column;
+    margin: 120px;
+    padding: 50px;
+    background-color: black;
+    border: 6px solid #95C11Eed;
+    border-radius: 20px;
   }
-  .skillsCardRow1,
-      
+  .skillsCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  }
+
+  .skillsCardRow{
+    display: flex;
+    height: 160px;
+    width: 160px;
+    justify-content: space-between;
+    background-color: black;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba (255,255,255,0.1);
+    border: 4px double #95C11Eed;
+    border-radius: 20px;
+    justify-content: center;
+    
+  }
+  .skillsCardRow img{
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+  }
+
+  #skillsCardRow2{
+    margin-top: 50px;
+  }
+
